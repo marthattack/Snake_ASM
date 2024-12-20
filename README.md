@@ -30,7 +30,7 @@ La fonction `int main()` met en place les interruptions clavier et temporelles, 
 
 Le plateau de jeu est représenté par un tableau d'entiers à une dimension, dans lequel on stocke successivement les lignes. Ainsi, les coordonées $(x,y)$ correspondent à la case $i = x*NombreCases + y$ ou $NombreCases$ est la largeur du tableau (`SCREEN_WIDTH` dans notre programme). 
 
-Dans ce tableau, les entiers sont soit 0 (rien), soit -1 (pomme), soit des entiers entre 1 et 5 qui représentent une partie du serpent (tête, queue, corps) et qui donnent la position de la partie suivante du serpent.
+Dans ce tableau, les entiers sont soit 0 (rien), soit -1 (pomme), soit des entiers entre 1 et 5 qui représentent une partie du serpent (tête, queue, corps) et qui donnent la position de la partie suivante du serpent. Cette fonctionnalité n'est au final pas utilisée : le déplacement du serpent est géré par deux variables donnant la position de la tête et de la queue du serpent. Le programme efface la queue et déplace le pointeur de tête au fur et à mesure de l'avancement.
 
 
 
